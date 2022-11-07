@@ -1,0 +1,1 @@
+App de tareas desarrollado en Python con Django.
