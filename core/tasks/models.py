@@ -2,6 +2,13 @@ from django.db import models
 
 # Create your models here.
 class Priority(models.Model):
+    """
+        Modelo para manejar el catálogo de Prioridades
+        Ejemplos: 
+        1. Baja
+        2. Media
+        3. Alta
+    """
     name = models.CharField(max_length=60)
 
     def __str__(self):
