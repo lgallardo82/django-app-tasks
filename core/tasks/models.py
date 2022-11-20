@@ -1,4 +1,5 @@
 from django.db import models
+from authentication.models import CustomUser
 
 # Create your models here.
 class Priority(models.Model):
@@ -16,6 +17,7 @@ class Priority(models.Model):
 
 
 class Task(models.Model):
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, default='DEFAULT VALUE')
     title = models.CharField(max_length=60, null = False)
     description = models.CharField(max_length=150, null = True, blank = True)
     is_completed = models.BooleanField(default=False)
