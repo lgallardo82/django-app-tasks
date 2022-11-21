@@ -13,7 +13,7 @@ How to get a copy of the project running on your local machine
 
 <b>1.Clone the repository</b>
 
-git clone https://github.com/santiudev/taskAppDjango.git
+git clone https://github.com/lgallardo82/django-app-tasks.git
 
 </br>
 
