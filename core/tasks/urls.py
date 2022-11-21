@@ -7,4 +7,6 @@ urlpatterns = [
     path('getTaskById/<int:pk>/', GetTaskById.as_view()),
     path('updateTaskById/<int:pk>/', UpdateTaskById.as_view()),
     path('deleteTaskById/<int:pk>/', DeleteTaskById.as_view()),
+    path('my-tasks', GetTasksByUserIDView.as_view()),
+    path('details/<int:task_id>/', task_detail)
 ]
